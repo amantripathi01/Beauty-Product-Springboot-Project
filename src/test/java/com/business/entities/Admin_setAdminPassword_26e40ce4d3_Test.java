@@ -36,7 +36,7 @@ package com.business.entities;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class AdminTest {
+public class Admin_setAdminPassword_26e40ce4d3_Test {
 
     @Test
     public void testSetAdminPassword_ValidPassword() {

@@ -23,8 +23,7 @@ package com.business.entities;
 
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
-
+import static org.junit.jupiter.api.Assertions.*;
 public class Admin_getAdminEmail_d02ae8178d_Test {
     private Admin admin;
 
@@ -58,6 +57,4 @@ public class Admin_getAdminEmail_d02ae8178d_Test {
         assertEquals(maxLengthEmail, admin.getAdminEmail());
     }
 
-    // Other scenarios like Usability, Performance, Security, Compatibility, Concurrency are not testable 
-    // using unit tests and require integration, performance, security, compatibility, and stress testing respectively.
 }

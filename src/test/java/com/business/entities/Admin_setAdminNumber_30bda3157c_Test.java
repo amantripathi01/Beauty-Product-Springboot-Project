@@ -37,7 +37,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class AdminTest {
+public class Admin_setAdminNumber_30bda3157c_Test {
 
     private Admin admin;
 
