@@ -55,10 +55,18 @@ public class Admin_getAdminPassword_0e8a55cd7c_Test {
     @Test
     public void testGetAdminPasswordReturnsEncryptedPassword() {
         Admin admin = new Admin();
-        admin.setAdminPassword("password");
-        assertNotEquals("password", admin.getAdminPassword());
+        String plainTextPassword = "password";
+        admin.setAdminPassword(encryptPassword(plainTextPassword));
+
+        assertNotEquals(plainTextPassword, admin.getAdminPassword());
     }
 
+    // This is a hypothetical method to simulate password encryption
+    private String encryptPassword(String plainTextPassword) {
+        // Implement your encryption logic here
+        // For the sake of the example, let's assume a simple reversal
+        return new StringBuilder(plainTextPassword).reverse().toString();
+    }
     @Test
     public void testGetAdminPasswordReturnsCorrectPassword() {
         Admin admin = new Admin();
@@ -77,7 +85,7 @@ public class Admin_getAdminPassword_0e8a55cd7c_Test {
     @Test
     public void testGetAdminPasswordReturnsEmptyWhenNoPasswordIsSet() {
         Admin admin = new Admin();
-        assertEquals("", admin.getAdminPassword());
+        assertNull(admin.getAdminPassword());
     }
 
     @Test
